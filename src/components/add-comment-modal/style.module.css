@@ -1,0 +1,21 @@
+.wrap {
+  @apply bg-black-opacity fixed top-0 left-0 w-[100vw] h-[100vh] z-50 flex items-center justify-center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  @apply w-full h-full max-w-[600px] max-h-[400px] bg-gray-200 p-2 rounded-xl gap-y-2;
+}
+
+.bar {
+  @apply flex justify-between
+}
+
+.title {
+  @apply py-2 text-lg uppercase font-bold h-full flex items-center;
+}
+
+.area {
+  @apply bg-gray-300 w-full h-full resize-none outline-0 p-2 rounded-xl;
+}

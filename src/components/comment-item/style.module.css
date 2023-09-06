@@ -1,0 +1,33 @@
+.wrap {
+  @apply relative bg-gray-100 p-4 rounded-lg pr-12;
+}
+
+.body {
+  @apply text-2xl mb-6;
+}
+
+.body p {
+  @apply whitespace-pre-line;
+}
+
+.remove {
+  @apply absolute top-2 right-2 opacity-0 cursor-pointer transition-all duration-1000;
+}
+
+.wrap:hover .remove {
+  @apply opacity-100;
+}
+
+.remove path {
+  @apply transition-all duration-500;
+}
+
+.remove:hover path {
+  @apply fill-red-500
+}
+
+@media (pointer:none), (pointer:coarse) {
+  .remove {
+    @apply opacity-100;
+  }
+}

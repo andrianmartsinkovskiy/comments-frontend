@@ -1,0 +1,3 @@
+.wrap {
+  @apply grid gap-y-[20px] py-[20px] pt-[80px];
+}
